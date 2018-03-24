@@ -10,7 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
+from apis import envs
 import os
+
+config = envs.config[os.environ["ENV"]]
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,10 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y1&9!)%669riwx1uv(4qyit3fv!kkc9*-_^4^%v5%6g#n6w!#d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config['DEBUG']
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = config['ALLOWED_HOSTS']
 
 # Application definition
 
