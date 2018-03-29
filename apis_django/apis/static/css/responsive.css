@@ -205,3 +205,24 @@ div.coupon input[type="text"] {
   
     
 }
+
+@media only screen and (min-width: 310px) and (max-width: 320px) {
+    .block-slider .caption-group-2-position {
+      position: absolute;
+      top: 3%;
+      right: 10%;
+    }
+    .block-slider .caption-group-3-position {
+      position: absolute;
+      top: -2%;
+      right: 20%;
+    }
+    .block-slider .caption-group-1-position {
+      position: absolute;
+      top: 6%;
+      right: 10%;
+    }
+    .block-slider .caption-group .button-radius {
+      margin-left: 50px;
+     
+}

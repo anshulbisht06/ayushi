@@ -18,7 +18,7 @@
 							<span class="primary"><strong>Flavoured Cakes</strong></span>
 						</h2>
                         <h4 class="caption subtitle">Egg/Eggless Cakes with different sizes</h4>
-						<a class="caption button-radius" href="/cakes"><span class="icon"></span>Shop now</a>
+						<a class="caption button-radius" href="{% url 'items_list' 'cakes' 1 %}"><span class="icon"></span>Shop now</a>
 					</div>
 				</li>
 				<li><img src="{% static 'imgs/slider-image-2.jpg' %}" alt="Slide">
@@ -27,7 +27,7 @@
 							<span class="primary">Flowers <strong>&amp;</strong> Chocolates</span>
 						</h2>
 						<h4 class="caption subtitle">Different varieties of flowers</h4>
-						<a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
+						<a class="caption button-radius" href="{% url 'items_list' 'flowers' 1 %}"><span class="icon"></span>Shop now</a>
 					</div>
 				</li>
 				<li><img src="{% static 'imgs/slider-image-3.jpg' %}" alt="Slide">
@@ -36,7 +36,7 @@
 							<span class="primary">Combos <strong>&amp;</strong> Hampers</span>
 						</h2>
 						<h4 class="caption subtitle">Beautiful Gift Hamper with Message Gifts Hamper for Special Ones</h4>
-						<a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
+						<a class="caption button-radius" href="{% url 'items_list' 'combos_and_hampers' 1 %}"><span class="icon"></span>Shop now</a>
 					</div>
 				</li>
 			</ul>
@@ -44,7 +44,7 @@
 		<!-- ./Slider -->
     </div> <!-- End slider area -->
     
-    <div class="promo-area">
+   <!--  <div class="promo-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- End promo area -->
+    </div> -->
     
     <div class="maincontent-area">
         <div class="zigzag-bottom"></div>

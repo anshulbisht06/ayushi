@@ -9,7 +9,7 @@ config = {
 	},
 	'production': {
 		'DEBUG': False,
-		'ALLOWED_HOSTS': ['18.188.98.228'],
+		'ALLOWED_HOSTS': ['18.188.98.228', 'ziarra.in'],
 		'STATIC_ROOT': '/var/www/ayushi/static/'
 	}
 }
