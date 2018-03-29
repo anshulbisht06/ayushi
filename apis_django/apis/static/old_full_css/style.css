@@ -500,7 +500,7 @@ z-index: 999;}
   padding: 1px 10px;
 }
 
-.maincontent-area {padding-bottom: 50px; padding-top:20px;}
+.maincontent-area {padding-bottom: 50px; padding-top:50px;}
 
 .product-wid-title {
   font-family: raleway;
@@ -1134,5 +1134,5 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 }
 
 div.popover{
-  left: -20px !important;
+  width: 100% !important;
 }

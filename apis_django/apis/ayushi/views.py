@@ -92,5 +92,9 @@ class HomePageView(TemplateView):
         return context
 
 
+class ContactPageView(TemplateView):
+    template_name = 'contact.html'
+
+
 class ErrorPageView(TemplateView):
     template_name = "error404.html"

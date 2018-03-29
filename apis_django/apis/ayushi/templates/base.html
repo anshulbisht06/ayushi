@@ -37,7 +37,12 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="logo">
-                  <h1><a href="./"><img src='{% static "img/logo.png" %}'></a></h1>
+                  <h1>
+                  <a href="./">
+                    <!-- <img src='{% static "img/logo.png" %}'> -->
+                    <strong style="color:deeppink;">Ziarra</strong>
+                  </a>
+                  </h1>
               </div>
             </div>
           </div>
@@ -62,7 +67,7 @@
                 <li><a href="{% url 'items_list' 'flowers' 1 %}">Flowers</a></li>
                 <li><a href="{% url 'items_list' 'combos_and_hampers' 1 %}">Combos &amp; Hampers</a></li>
                 <li><a href="{% url 'items_list' 'personalised' 1 %}">Personalised</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{% url 'contact_page' %}">Contact</a></li>
             </ul>
           </div>  
         </div>
@@ -91,7 +96,7 @@
                       <div class="footer-menu">
                           <h2 class="footer-wid-title">User Navigation </h2>
                           <ul>
-                              <li><a href="#">Contact</a></li>
+                              <li><a href="{% url 'contact_page' %}">Contact</a></li>
                               <li><a href="{% url 'home_page' %}">Front page</a></li>
                           </ul>                        
                       </div>
@@ -129,12 +134,7 @@
     <!-- jQuery easing -->
     <script src='{% static "js/jquery.easing.1.3.min.js" %}'></script>
     
-   
-    <!-- Slider -->
-    <script src='{% static "js/bxslider.min.js" %}'></script>
-    <script src='{% static "js/script.slider.min.js" %}'></script>
-
-        <!-- Main Script -->
+    <!-- Main Script -->
     <script src='{% static "js/main.js" %}'></script>
 
     {% block script_block %}
