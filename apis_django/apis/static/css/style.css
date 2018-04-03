@@ -1133,6 +1133,6 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   color: #5a88ca;
 }
 
-div.popover{
-  left: -20px !important;
+div.popover.top{
+  left: 0.5px !important;
 }

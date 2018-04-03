@@ -48,7 +48,13 @@
                                                 {% endfor %}
                                             </tbody>
                                         </table>
-                                    </div>    
+                                    </div> 
+
+                                    <div>
+                                        <a class="btn btn-block btn-warning hidden-lg" href="https://api.whatsapp.com/send?phone=919560722971&text={{item.name}}">
+                                               Click to buy
+                                        </a>
+                                    </div> <br/>
                                     
                                     <div style='color:red;'>
                                         <p>Delivery Instruction : {{ item.delivery_instructions }}</p>
