@@ -19,7 +19,17 @@ input[type="submit"], button[type="submit"] {
 }
 
 /* Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .popover.top{
+      left: 0.5px !important;
+    }
+    .footer-top-area .zigzag-bottom{
+      display: none;
+    }
+    .footer-top-area {
+      padding: 35px 0 0;
+    }
+
 .user-menu, .header-right ul.list-inline {
   text-align: center;
 }
@@ -206,9 +216,9 @@ div.coupon input[type="text"] {
     
 }
 
-@media only screen and (min-width: 310px) and (max-width: 320px) {
-    div.popover{
-      left: 5px !important;
+@media only screen and (min-width: 310px) and (max-width: 767px) {
+    .popover.top{
+      left: 0.5px !important;
     }
     .footer-top-area .zigzag-bottom{
       display: none;
